@@ -41,6 +41,7 @@ You can convert these Sigils and Wrightstones into **Knickknack Vouchers**, or c
 
 - **Browse** → Select your save file. On Windows, the path is C:\Users\username\AppData\Local\GBFR\Saved\SaveGames\SaveData1.dat
 - **Backup** → Back up SaveData1.dat in the selected directory to SaveData1_patcher_backup.dat
+- **Scan** → Scan your SaveData1.dat
 - **Sigils, Wrightstones → Vouchers** → Convert Sigils and Wrightstones to Knickknack Vouchers using the rules above
 - **Vouchers → Transmarvel Points** → Convert Knickknack Vouchers to Transmarvel Points using the rules above
 
