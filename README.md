@@ -17,6 +17,10 @@ A tool that converts Sigils and Wrightstones into Knickknack Vouchers and Transm
 
 **Note:** Sigils that are included in an equipment preset but not currently  equipped will be dismantled. Please review your save and lock those  Sigils.
 
+
+
+
+
 **Wrightstone criteria:**
 
 1. Level is **not** (20, 15, 10)
@@ -24,12 +28,12 @@ A tool that converts Sigils and Wrightstones into Knickknack Vouchers and Transm
 
 You can convert these Sigils and Wrightstones into **Knickknack Vouchers**, or convert **all** Knickknack Vouchers directly into **Transmarvel Points** at a rate of **1 Knickknack Voucher = 1.33 Transmarvel Points** (**1 Transmarvel Stock = 150 Transmarvel Points**).
 
-
-
 > (**Why 1.33?**
 > This coefficient is derived from the drop probabilities of **Sigils** and **Wrightstones** in **Level 3 Transmutation**, multiplied by the number of **vouchers** they can be exchanged for.
 > Source: https://nenkai.github.io/relink-modding/resources/gacha_rates/#level-3-transmutation-total-weight-10000
 > There may be a certain margin of error.)
+
+
 
 
 
@@ -55,11 +59,19 @@ If you only convert Sigils and Wrightstones into Transmarvel Stock and the total
 
 
 
+
+
+
+
 **TODO (maybe):**
 
 1. Add Chinese and Japanese translations.
 2. Add item-to-currency conversion (items → Knickknack Vouchers / Transmarvel Stock).
 3. Add more filtering criteria.
+
+
+
+
 
 
 
