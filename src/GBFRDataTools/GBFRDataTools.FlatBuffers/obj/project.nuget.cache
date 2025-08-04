@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Cvl+TqmWkFs=",
+  "success": true,
+  "projectFilePath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj",
+  "expectedPackageFiles": [
+    "/Users/ziyan/.nuget/packages/flatsharp.compiler/7.4.0/flatsharp.compiler.7.4.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/flatsharp.runtime/7.4.0/flatsharp.runtime.7.4.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}

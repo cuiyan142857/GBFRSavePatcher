@@ -1,0 +1,119 @@
+<!-- MainWindow.axaml -->
+<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:GBFRSave.UI.ViewModels"
+    x:Class="GBFRSave.UI.Views.MainWindow"
+    x:DataType="vm:MainWindowViewModel"
+    Width="720" Height="570"
+    Title="GBFR Save Patcher"
+    RequestedThemeVariant="Default">
+
+  <!-- Local styles for a cleaner “form” look -->
+<Window.Styles>
+  <!-- Labels on TextBlocks -->
+  <Style Selector="TextBlock.form-label">
+    <Setter Property="VerticalAlignment" Value="Center"/>
+    <Setter Property="Opacity" Value="0.85"/>
+  </Style>
+
+  <!-- Right-aligned numeric values on TextBlocks -->
+  <Style Selector="TextBlock.stat-value">
+    <Setter Property="HorizontalAlignment" Value="Right"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
+  </Style>
+
+  <!-- Section headers on TextBlocks -->
+  <Style Selector="TextBlock.section-title">
+    <Setter Property="FontSize" Value="16"/>
+    <Setter Property="FontWeight" Value="SemiBold"/>
+    <Setter Property="Margin" Value="0,0,0,8"/>
+  </Style>
+
+  <!-- Card container on Borders -->
+  <Style Selector="Border.card">
+    <Setter Property="CornerRadius" Value="12"/>
+    <Setter Property="Padding" Value="12"/>
+    <Setter Property="Background" Value="{DynamicResource ThemeControlLowBrush}"/>
+  </Style>
+</Window.Styles>
+
+  <Grid RowDefinitions="Auto,Auto,*,Auto" RowSpacing="12">
+    <!-- Header -->
+    <TextBlock Grid.Row="0" Text="GBFR Save Patcher"
+               Margin="16,12,16,0"
+               FontSize="18" FontWeight="SemiBold"/>
+
+    <!-- File & actions card -->
+    <Border Grid.Row="1" Margin="16,0,16,0" Classes="card">
+      <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto" RowSpacing="8" ColumnSpacing="8">
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="SaveData file:" Classes="form-label"/>
+
+        <TextBox Grid.Row="0" Grid.Column="1"
+                 Watermark="Path to SaveData1.dat"
+                 Text="{Binding SavePath, Mode=TwoWay}" />
+
+        <Button Grid.Row="0" Grid.Column="2" Content="Browse…" Click="OnBrowseClick"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"
+                    Orientation="Horizontal" Spacing="8">
+          <Button Content="Backup"  Command="{Binding BackupFileCommand}"  IsDefault="True" />
+          <Button Content="Scan"  Command="{Binding ScanCommand}"  IsDefault="True" />
+          <Button Content="Sigils, Wrightstones → Vouchers" Command="{Binding ApplyPatchCommand}" />
+          <Button Content="Vouchers → Transmarvel Points" Command="{Binding ConvertTicketsToTransmarvelPointsCommand}" />
+        </StackPanel>
+      </Grid>
+    </Border>
+
+    <!-- Stats card -->
+    <Border Grid.Row="2" Margin="16,0,16,0" Classes="card">
+      <StackPanel>
+        <TextBlock Text="Summary" Classes="section-title"/>
+        <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+              RowSpacing="6" ColumnSpacing="12">
+          <TextBlock Grid.Row="0" Grid.Column="0" Text="Found sigil count:" Classes="form-label"/>
+          <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding SigilCount}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="1" Grid.Column="0" Text="Sigil count to remove:" Classes="form-label"/>
+          <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding RemovedSigilCount}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="2" Grid.Column="0" Text="Found wrightstone count:" Classes="form-label"/>
+          <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding WrightstoneCount}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="3" Grid.Column="0" Text="Wrightstone count to remove:" Classes="form-label"/>
+          <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding RemovedWrightstoneCount}" Classes="stat-value"/>
+
+          <Separator Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,6"/>
+
+          <TextBlock Grid.Row="5" Grid.Column="0" Text="Old tickets:" Classes="form-label"/>
+          <TextBlock Grid.Row="5" Grid.Column="1" Text="{Binding OldTickets}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="6" Grid.Column="0" Text="Sigil tickets:" Classes="form-label"/>
+          <TextBlock Grid.Row="6" Grid.Column="1" Text="{Binding SigilTickets}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="7" Grid.Column="0" Text="Wrightstone tickets:" Classes="form-label"/>
+          <TextBlock Grid.Row="7" Grid.Column="1" Text="{Binding WrightstoneTickets}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="8" Grid.Column="0" Text="Total tickets:" Classes="form-label"/>
+          <TextBlock Grid.Row="8" Grid.Column="1" Text="{Binding NewTickets}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="9" Grid.Column="0" Text="Old Transmarvel Points:" Classes="form-label"/>
+          <TextBlock Grid.Row="9" Grid.Column="1" Text="{Binding OldTrans}" Classes="stat-value"/>
+
+          <TextBlock Grid.Row="10" Grid.Column="0" Text="New Transmarvel Points:" Classes="form-label"/>
+          <TextBlock Grid.Row="10" Grid.Column="1" Text="{Binding NewTrans}" Classes="stat-value"/>
+        </Grid>
+      </StackPanel>
+    </Border>
+
+    <!-- Collapsible details (keeps main UI clean) -->
+<Border Grid.Row="3" Margin="16,0,16,16" Classes="card">
+  <StackPanel Spacing="4">
+    <TextBlock Classes="section-title" Text="Details"/>
+    <TextBlock FontStyle="Italic" Text="{Binding Status}"/>
+    <TextBlock FontStyle="Italic" Text="{Binding HashStatus}"/>
+    <TextBlock FontStyle="Italic" Text="{Binding OutputPath}"/>
+  </StackPanel>
+</Border>
+  </Grid>
+</Window>

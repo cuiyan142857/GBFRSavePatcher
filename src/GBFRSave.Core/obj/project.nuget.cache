@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "dgSpecHash": "24Uh3HcCung=",
+  "success": true,
+  "projectFilePath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/ziyan/.nuget/packages/csvhelper/33.1.0/csvhelper.33.1.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/flatsharp/7.4.0/flatsharp.7.4.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/flatsharp.runtime/7.4.0/flatsharp.runtime.7.4.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/k4os.hash.xxhash/1.0.8/k4os.hash.xxhash.1.0.8.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.bcl.asyncinterfaces/7.0.0/microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.4/microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.codeanalysis.common/4.8.0/microsoft.codeanalysis.common.4.8.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.codeanalysis.csharp/4.8.0/microsoft.codeanalysis.csharp.4.8.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.codeanalysis.csharp.workspaces/4.8.0/microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.codeanalysis.workspaces.common/4.8.0/microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.7/microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/microsoft.extensions.logging.abstractions/9.0.7/microsoft.extensions.logging.abstractions.9.0.7.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/syroot.binarydata/5.2.2/syroot.binarydata.5.2.2.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/syroot.binarydata.core/5.2.0/syroot.binarydata.core.5.2.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.collections.immutable/7.0.0/system.collections.immutable.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.composition/7.0.0/system.composition.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.composition.attributedmodel/7.0.0/system.composition.attributedmodel.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.composition.convention/7.0.0/system.composition.convention.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.composition.hosting/7.0.0/system.composition.hosting.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.composition.runtime/7.0.0/system.composition.runtime.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.composition.typedparts/7.0.0/system.composition.typedparts.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.io.hashing/8.0.0/system.io.hashing.8.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.reflection.metadata/7.0.0/system.reflection.metadata.7.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "/Users/ziyan/.nuget/packages/system.threading.channels/7.0.0/system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "GBFRSave.Core depends on FlatSharp (>= 7.0.6) but FlatSharp 7.0.6 was not found. FlatSharp 7.4.0 was resolved instead.",
+      "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj",
+      "libraryId": "FlatSharp",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

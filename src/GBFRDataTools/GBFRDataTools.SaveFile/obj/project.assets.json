@@ -1,0 +1,304 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "FlatSharp.Runtime/7.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5"
+        },
+        "compile": {
+          "lib/net8.0/FlatSharp.Runtime.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FlatSharp.Runtime.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syroot.BinaryData/5.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Syroot.BinaryData.Core": "5.2.0",
+          "System.Memory": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syroot.BinaryData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syroot.BinaryData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syroot.BinaryData.Core/5.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/Syroot.BinaryData.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/Syroot.BinaryData.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO.Hashing/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.IO.Hashing.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "GBFRDataTools.FlatBuffers/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "FlatSharp.Runtime": "7.4.0"
+        },
+        "compile": {
+          "bin/placeholder/GBFRDataTools.FlatBuffers.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GBFRDataTools.FlatBuffers.dll": {}
+        }
+      },
+      "GBFRDataTools.Hashing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "System.IO.Hashing": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GBFRDataTools.Hashing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GBFRDataTools.Hashing.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FlatSharp.Runtime/7.4.0": {
+      "sha512": "d5BzncdlfI5/MhHDgwyYAqDFkzqHkmQLwn8H2QljvOKGg0Nkxd7ogE8lJSzwpjp77/JLX/b47sYnUnisWlvLWA==",
+      "type": "package",
+      "path": "flatsharp.runtime/7.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flatsharp.runtime.7.4.0.nupkg.sha512",
+        "flatsharp.runtime.nuspec",
+        "lib/net6.0/FlatSharp.Runtime.dll",
+        "lib/net6.0/FlatSharp.Runtime.xml",
+        "lib/net7.0/FlatSharp.Runtime.dll",
+        "lib/net7.0/FlatSharp.Runtime.xml",
+        "lib/net8.0/FlatSharp.Runtime.dll",
+        "lib/net8.0/FlatSharp.Runtime.xml",
+        "lib/netstandard2.0/FlatSharp.Runtime.dll",
+        "lib/netstandard2.0/FlatSharp.Runtime.xml",
+        "lib/netstandard2.1/FlatSharp.Runtime.dll",
+        "lib/netstandard2.1/FlatSharp.Runtime.xml"
+      ]
+    },
+    "Syroot.BinaryData/5.2.2": {
+      "sha512": "3E4l6a20cnsgywGdurRfrtv3+au02AsKb3yEmcsskgJrJsRv2UaD9MaSFOJLloAjP5ZI8Tjn6YSWF3k5pfdrkg==",
+      "type": "package",
+      "path": "syroot.binarydata/5.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Syroot.BinaryData.dll",
+        "lib/net452/Syroot.BinaryData.xml",
+        "lib/netstandard2.0/Syroot.BinaryData.dll",
+        "lib/netstandard2.0/Syroot.BinaryData.xml",
+        "syroot.binarydata.5.2.2.nupkg.sha512",
+        "syroot.binarydata.nuspec"
+      ]
+    },
+    "Syroot.BinaryData.Core/5.2.0": {
+      "sha512": "zMrTKIa+zwvFqkahbDdCzGW0Jq7BVE44gzuK0OT0ia+DpRtZTcwqOzSMiLs7Z2urY9vMqh5yTMLGVUal0dkQAA==",
+      "type": "package",
+      "path": "syroot.binarydata.core/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Syroot.BinaryData.Core.dll",
+        "lib/net452/Syroot.BinaryData.Core.xml",
+        "lib/netcoreapp2.1/Syroot.BinaryData.Core.dll",
+        "lib/netcoreapp2.1/Syroot.BinaryData.Core.xml",
+        "lib/netstandard2.0/Syroot.BinaryData.Core.dll",
+        "lib/netstandard2.0/Syroot.BinaryData.Core.xml",
+        "syroot.binarydata.core.5.2.0.nupkg.sha512",
+        "syroot.binarydata.core.nuspec"
+      ]
+    },
+    "System.IO.Hashing/8.0.0": {
+      "sha512": "ne1843evDugl0md7Fjzy6QjJrzsjh46ZKbhf8GwBXb5f/gw97J4bxMs0NQKifDuThh/f0bZ0e62NPl1jzTuRqA==",
+      "type": "package",
+      "path": "system.io.hashing/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Hashing.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.IO.Hashing.targets",
+        "lib/net462/System.IO.Hashing.dll",
+        "lib/net462/System.IO.Hashing.xml",
+        "lib/net6.0/System.IO.Hashing.dll",
+        "lib/net6.0/System.IO.Hashing.xml",
+        "lib/net7.0/System.IO.Hashing.dll",
+        "lib/net7.0/System.IO.Hashing.xml",
+        "lib/net8.0/System.IO.Hashing.dll",
+        "lib/net8.0/System.IO.Hashing.xml",
+        "lib/netstandard2.0/System.IO.Hashing.dll",
+        "lib/netstandard2.0/System.IO.Hashing.xml",
+        "system.io.hashing.8.0.0.nupkg.sha512",
+        "system.io.hashing.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "GBFRDataTools.FlatBuffers/1.0.0": {
+      "type": "project",
+      "path": "../GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj",
+      "msbuildProject": "../GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj"
+    },
+    "GBFRDataTools.Hashing/1.0.0": {
+      "type": "project",
+      "path": "../GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj",
+      "msbuildProject": "../GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "GBFRDataTools.FlatBuffers >= 1.0.0",
+      "GBFRDataTools.Hashing >= 1.0.0",
+      "Syroot.BinaryData >= 5.2.2"
+    ]
+  },
+  "packageFolders": {
+    "/Users/ziyan/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/GBFRDataTools.SaveFile.csproj",
+      "projectName": "GBFRDataTools.SaveFile",
+      "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/GBFRDataTools.SaveFile.csproj",
+      "packagesPath": "/Users/ziyan/.nuget/packages/",
+      "outputPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/ziyan/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj": {
+              "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj"
+            },
+            "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj": {
+              "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Syroot.BinaryData": {
+            "target": "Package",
+            "version": "[5.2.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/Users/ziyan/.dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

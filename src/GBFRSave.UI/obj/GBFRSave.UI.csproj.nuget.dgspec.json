@@ -1,0 +1,400 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.UI/GBFRSave.UI.csproj": {}
+  },
+  "projects": {
+    "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj",
+        "projectName": "GBFRDataTools.FlatBuffers",
+        "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj",
+        "packagesPath": "/Users/ziyan/.nuget/packages/",
+        "outputPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ziyan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "FlatSharp.Compiler": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.4.0, )"
+            },
+            "FlatSharp.Runtime": {
+              "target": "Package",
+              "version": "[7.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/ziyan/.dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj",
+        "projectName": "GBFRDataTools.Hashing",
+        "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj",
+        "packagesPath": "/Users/ziyan/.nuget/packages/",
+        "outputPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ziyan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "System.IO.Hashing": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/ziyan/.dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/GBFRDataTools.SaveFile.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/GBFRDataTools.SaveFile.csproj",
+        "projectName": "GBFRDataTools.SaveFile",
+        "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/GBFRDataTools.SaveFile.csproj",
+        "packagesPath": "/Users/ziyan/.nuget/packages/",
+        "outputPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ziyan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj": {
+                "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj"
+              },
+              "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj": {
+                "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Syroot.BinaryData": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/ziyan/.dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj",
+        "projectName": "GBFRSave.Core",
+        "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj",
+        "packagesPath": "/Users/ziyan/.nuget/packages/",
+        "outputPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ziyan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj": {
+                "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.FlatBuffers/GBFRDataTools.FlatBuffers.csproj"
+              },
+              "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj": {
+                "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.Hashing/GBFRDataTools.Hashing.csproj"
+              },
+              "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/GBFRDataTools.SaveFile.csproj": {
+                "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRDataTools/GBFRDataTools.SaveFile/GBFRDataTools.SaveFile.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.1.0, )"
+            },
+            "FlatSharp": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
+            "K4os.Hash.xxHash": {
+              "target": "Package",
+              "version": "[1.0.8, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/ziyan/.dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.UI/GBFRSave.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.UI/GBFRSave.UI.csproj",
+        "projectName": "GBFRSave.UI",
+        "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.UI/GBFRSave.UI.csproj",
+        "packagesPath": "/Users/ziyan/.nuget/packages/",
+        "outputPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.UI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ziyan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj": {
+                "projectPath": "/Users/ziyan/publish/GBFRSavePatcher/src/GBFRSave.Core/GBFRSave.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.Diagnostics": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.Fonts.Inter": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.ReactiveUI": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.Themes.Fluent": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/ziyan/.dotnet/sdk/9.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

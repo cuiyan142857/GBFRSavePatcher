@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\GBFRDataTools\GBFRDataTools.SaveFile\GBFRDataTools.SaveFile.csproj" />
+    <ProjectReference Include="..\GBFRDataTools\GBFRDataTools.Hashing\GBFRDataTools.Hashing.csproj" />
+    <ProjectReference Include="..\GBFRDataTools\GBFRDataTools.FlatBuffers\GBFRDataTools.FlatBuffers.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="33.1.0" />
+    <PackageReference Include="FlatSharp" Version="7.0.6" />
+    <PackageReference Include="K4os.Hash.xxHash" Version="1.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.7" />
+  </ItemGroup>
+  <ItemGroup>
+  <Content Include="Data\sigil_id_with_ticket.csv">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+  </Content>
+  <Content Include="Data\wrightstone_with_ticket.csv">
+    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+  </Content>
+</ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>
