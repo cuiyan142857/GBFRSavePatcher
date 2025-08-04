@@ -59,7 +59,15 @@ If you only convert Sigils and Wrightstones into Transmarvel Stock and the total
 
 
 
+**Develop Environment:**
 
+This project requires .NET 8.0 and .NET 9.0.
+
+Run command:
+
+```
+dotnet run --project src/GBFRSave.UI
+```
 
 
 
@@ -68,8 +76,6 @@ If you only convert Sigils and Wrightstones into Transmarvel Stock and the total
 1. Add Chinese and Japanese translations.
 2. Add item-to-currency conversion (items → Knickknack Vouchers / Transmarvel Stock).
 3. Add more filtering criteria.
-
-
 
 
 
