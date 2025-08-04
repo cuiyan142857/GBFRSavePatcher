@@ -9,6 +9,7 @@ A tool that converts Sigils and Wrightstones into Knickknack Vouchers and Transm
 
 
 **This is an basic version** that can convert eligible **Sigils** and **Wrightstones** into **Knickknack Vouchers**, or directly into **Transmarvel Stock**.
+
 **Sigil criteria:**
 
 1. Level ≤ 11
