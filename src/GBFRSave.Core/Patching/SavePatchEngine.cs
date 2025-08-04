@@ -23,10 +23,8 @@ namespace GBFRSave.Core.Patching
         private const int FOOTER_BYTES = 0x14;
         private const int HASH_BYTES = 10 * 8;
 
-        // Default conversion rate used by your original code
         private const double DEFAULT_VOUCHER_TO_TRANSMARVEL_POINT_RATE = 1.33;
 
-        // Your original file header shape
         private struct RawHeader
         {
             public int mainVersion;
@@ -39,9 +37,6 @@ namespace GBFRSave.Core.Patching
             public long slotDataSize;
         }
 
-        // ---- Public API -----------------------------------------------------
-
-        /// <summary>Parse and return the in-memory save object.</summary>
         public object Load(string path)
         {
             if (string.IsNullOrWhiteSpace(path)) throw new ArgumentException("Path is empty.");
@@ -49,10 +44,6 @@ namespace GBFRSave.Core.Patching
             return SaveGameFile.FromFile(path);
         }
 
-        /// <summary>
-        /// Compute ticket totals (sigils + wrightstones) using the same rules as your original code.
-        /// Returns (sigilTickets, wrightstoneTickets, totalTickets).
-        /// </summary>
         public (int sigilCount, int removedSigilCount,
         int wrightstoneCount, int removedWrightstoneCount,
         long oldTickets, int sigilTickets, int wrightstoneTickets, long newTickets,
@@ -101,14 +92,6 @@ namespace GBFRSave.Core.Patching
                     oldTrans, newTrans);
         }
 
-        /// <summary>
-        /// Apply patch as per your original flow:
-        /// 1) Compute tickets from factors + wrightstones
-        /// 2) Add tickets to vouchers (1802,145)
-        /// 3) Optionally convert vouchers → transmarvel points (1105,0) and set vouchers to 0
-        /// 4) Optionally clear all factors and/or wrightstones
-        /// 5) Serialize SlotData with correct hashes and write output file.
-        /// </summary>
         public (string outputPath, bool hashStatus) ApplyPatch(string inputPath)
         {
             var baseDir = AppContext.BaseDirectory;
@@ -144,7 +127,6 @@ namespace GBFRSave.Core.Patching
             wrightstones = WrightstoneFilter(wrightstones);
             int wrightTickets = wrightstones.Where(w => w.Keep == 0).Sum(w => w.TicketCount);
 
-            // IDs you used in your original code:
             // vouchers:          IdType=1802, UnitId=145, Int
             // transmarvel points:IdType=1105, UnitId=0, Int
             var readVouchersCfg = new ReadConfig { IdType = 1802, UnitId = 145, TableType = TableType.Int };
@@ -154,13 +136,11 @@ namespace GBFRSave.Core.Patching
             long added = sigilTickets + wrightTickets;
             long newVouchers = oldVouchers + added;
 
-            // 2) Write vouchers
             if (intIdx?.TryGetValue(((uint)readVouchersCfg.IdType, readVouchersCfg.UnitId), out var voucherUnit) == true)
             {
                 voucherUnit.ValueData[0] = checked((int)newVouchers);
             }
 
-            // 4) Optional clearing of factors / wrightstones (same keys/values as your code)
             if (options.ClearAllFactors)
             {
                 foreach (var s in sigils)
@@ -186,7 +166,7 @@ namespace GBFRSave.Core.Patching
                 }
             }
 
-            // 5) Serialize SlotData + rewrite the file with valid hashes
+            // Serialize SlotData + rewrite the file with valid hashes
             var slotBuf = SerializeSlotData(save, tmpPath, hdr, out int newSlotSize);
             WritePatchedFile(tmpPath, outputPath, hdr, slotBuf, newSlotSize);
 
@@ -214,7 +194,6 @@ namespace GBFRSave.Core.Patching
             var uintIdx = save.SlotData.UIntTable?.ToDictionary(e => ((uint)e.IDType, (int)e.UnitID));
             var boolIdx = save.SlotData.BoolTable?.ToDictionary(e => ((uint)e.IDType, (int)e.UnitID));
 
-            // IDs you used in your original code:
             // vouchers:          IdType=1802, UnitId=145, Int
             // transmarvel points:IdType=1105, UnitId=0, Int
             var readVouchersCfg = new ReadConfig { IdType = 1802, UnitId = 145, TableType = TableType.Int };
@@ -236,7 +215,7 @@ namespace GBFRSave.Core.Patching
                 transUnit.ValueData[0] = (int)newTrans;
             }
 
-            // 5) Serialize SlotData + rewrite the file with valid hashes
+            // Serialize SlotData + rewrite the file with valid hashes
             var slotBuf = SerializeSlotData(save, tmpPath, hdr, out int newSlotSize);
             WritePatchedFile(tmpPath, outputPath, hdr, slotBuf, newSlotSize);
 
@@ -261,9 +240,6 @@ namespace GBFRSave.Core.Patching
             return backupPath;
         }
 
-        /// <summary>
-        /// Public helper for diagnostics / unit tests. Recomputes and compares the 10 section hashes.
-        /// </summary>
         public bool VerifyHashes(string path)
         {
             if (!ReadHeader(path, out var header, out var fileLen))
@@ -433,7 +409,6 @@ namespace GBFRSave.Core.Patching
             }
         }
 
-        // ---- Index-based fast reads (your original) ------------------------
 
         private enum TableType { Int, UInt }
 
