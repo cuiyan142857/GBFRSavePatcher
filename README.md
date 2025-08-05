@@ -84,4 +84,7 @@ dotnet run --project src/GBFRSave.UI
 
 
 **Acknowledgments:**
-The data structures and parsing methods are derived from the project https://github.com/Nenkai/GBFRDataTools. Many thanks to nenkai for the project.
+
+This project is licensed under the MIT License and includes code from [Nenkai](https://github.com/Nenkai/GBFRDataTools)’s repository.
+
+Many thanks to nenkai for the project.
